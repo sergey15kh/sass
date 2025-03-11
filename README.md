@@ -40,8 +40,10 @@ Add the following scripts in your package.json to compile and watch SCSS files:
 }
 ```
 
-```bash
+```
 npm run sass
+```
 
+```
 npm run sass:watch
 ```
