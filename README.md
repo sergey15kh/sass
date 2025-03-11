@@ -10,32 +10,9 @@ Organized with separation of concerns, performance, and developer experience in 
 ```bash
 sass/
 ├── helpers/     # Variables, functions, mixins, breakpoints
-├── base/          # Normalize, resets, typography
-├── layout/        # Grids, wrappers, containers
-├── components/    # Reusable UI (buttons, inputs, cards)
-├── sections/      # Page sections (header, footer, hero)
-├── vendors/       # 3rd-party styles (e.g. Swiper)
-└── style.scss     # Main entry point
-```
-
-// 🔹 System styles
-@use "base/normalize";
-
-// 🔸 Helpers
-@use "helpers" as *;
-
-// 🔸 Base
-@use "base";
-
-// 🔸 Layout
-@use "layout";
-
-// 🔸 UI Components
-@use "components";
-
-// 🔸 Page Sections
-@use "sections";
-
-// 🔸 Vendors
-@use "vendors/swiper";
-
+├── base/        # Normalize, resets, typography
+├── layout/      # Grids, wrappers, containers
+├── components/  # Reusable UI (buttons, inputs, cards)
+├── sections/    # Page sections (header, footer, hero)
+├── vendors/     # 3rd-party styles (e.g. Swiper)
+└── style.scss   # Main entry point
