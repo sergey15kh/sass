@@ -1,7 +1,7 @@
-@use "helpers" as *;
-
 // Base styles
-@use "globals";
+@use "globals/normalize";
+
+@use "helpers" as *;
 
 // Layout
 @use "layout";
