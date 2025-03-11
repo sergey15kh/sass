@@ -1,10 +1,7 @@
-// 🔹 System
-@use "base/normalize";
-
 @use "helpers" as *;
 
 // Base styles
-@use "base";
+@use "globals";
 
 // Layout
 @use "layout";
