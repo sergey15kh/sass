@@ -1,0 +1,24 @@
+@use "../helpers" as *;
+
+
+$container-mobile: 100%;
+$container-tablet: 720px;
+$container-laptop: 1080px;
+$container-desktop: 1320px;
+
+.container {
+  width: $container-mobile;
+  margin-inline: auto;
+
+  @include tablet {
+    width: $container-tablet;
+  }
+
+  @include laptop {
+    width: $container-laptop;
+  }
+
+  @include desktop {
+    width: $container-desktop;
+  }
+}

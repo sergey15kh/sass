@@ -1,0 +1,13 @@
+$tablet: 768;
+$laptop: 1440;
+$desktop: 1920;
+
+@mixin tablet {
+  @media (min-width: rem($tablet)) { @content; }
+}
+@mixin laptop {
+  @media (min-width: rem($laptop)) { @content; }
+}
+@mixin desktop {
+  @media (min-width: rem($desktop)) { @content; }
+}

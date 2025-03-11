@@ -1,0 +1,23 @@
+@use "sass:math";
+
+@function rem($px) {
+  @if math.is-unitless($px) {
+    @return #{math.div($px, 16)}rem;
+  } @else {
+    @error "Use unitless values in rem()";
+  }
+}
+
+.box {
+  width: rem(400);        // → 25rem
+  height: rem(250);       // → 15.625rem
+  padding: rem(40);       // → 2.5rem
+  font-size: rem(16);     // → 1rem;
+}
+
+@media (max-width: rem(768)) {
+  .box {
+    padding: rem(20);     // → 1.25rem
+    font-size: rem(14);   // → 0.875rem
+  }
+}
